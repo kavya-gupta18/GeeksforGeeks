@@ -38,15 +38,27 @@ class Main {
 // User function Template for Java
 
 class Solution {
-    int i=1;
+    // int i=1;
     
     public void printNos(int n) {
         // Your code here
+        //RECURSION
         
-        if(i>n) return;
-        System.out.print(i+" ");
-        i++;
-        printNos(n);
+        // if(i>n) return;
+        // System.out.print(i+" ");
+        // i++;
+        // printNos(n);
+        
+        //BACKTRACKING 
+        
+       if(n<1){
+            return;
+        }
+        printNos(n-1);
+        System.out.print(n+" ");
+         
+         
+         
         
     }
 }
